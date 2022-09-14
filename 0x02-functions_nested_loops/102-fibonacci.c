@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* main - Program that prints the first 50 fibonacci numbers
+* main - Program that prints the first fibonacci numbers
 *
 * Return: always 0
 */
@@ -13,7 +13,7 @@ long int x, y, z;
 x = 1;
 y = 2;
 printf("%ld, %ld", x, y);
-for(c = 0; c < 48; c++);
+for (c = 0; c < 48; c++)
 {
 z = x + y;
 printf(", %ld", z);
