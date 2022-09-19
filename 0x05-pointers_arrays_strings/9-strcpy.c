@@ -2,19 +2,21 @@
 
 /**
 * _strcpy - function with two arguments
-* @dest: first argument char type pointer
-* @src: second argument char type pointer
-*
+* @dest: destination
+* @src: source
 * Description: copies the string to an array
-* Return: na
+* Return: returns the pointer to dest
 */
 char *_strcpy(char *dest, char *src)
 {
-int i;
+int count = 0;
 
-for (i = 0; src[i] != '\0'; i++)
-dest[i] = src[i];
-for ( ; i < src[i]; i++)
-dest[i] = ('\0');
+while (count >= 0)
+{
+*(dest + count) = *(src + count);
+if (*(src + count) == '\0')
+break;
+count++;
+}
 return (dest);
 }
