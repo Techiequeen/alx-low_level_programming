@@ -2,15 +2,18 @@
 
 /**
 * _strlen - This is a function that returns the length of a string
-* @s: string
-* Return: always 0
+* @s: char type pointer
+* Return: string
 */
 
 int _strlen(char *s)
 {
-int count = 0;
+int i;
 
-while (*(s + count) != '\n')
-count++;
-return (count);
+i = 0;
+while (*(s + i) != '\0')
+{
+i++;
+}
+return (i);
 }
