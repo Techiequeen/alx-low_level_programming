@@ -25,5 +25,5 @@ break;
 count++;
 count2++;
 }
-return (0);
+return (dest);
 }
