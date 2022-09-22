@@ -1,13 +1,11 @@
 #include "main.h"
 
 /**
-* rot13 - function with one argument
-* @str: char type pointer argument
-*
-* Description: encodes rot13 with a string
-* Return; string value
+* rot13 - function that encodes a sring using rot13
+* @str: char type 1st argument
+* Return: string
 */
-char *rot13(char *)
+char *rot13(char *str)
 {
 char *input, *output;
 int count, count2;
