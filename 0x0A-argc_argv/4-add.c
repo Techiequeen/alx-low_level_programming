@@ -9,20 +9,30 @@
 */
 int main(int argc, char *argv[])
 {
-int i, j, add = 0;
+int i, j, result;
 
-for (i = 0; i < argc; i++)
+result = 0;
+if (argc > 1)
+{
+for (i = 1; i < argc; i++)
 {
 for (j = 0; argv[i][j] != '\0'; j++)
 {
-if (!isdigit(argv[i][j]))
+if (argv[i][j] >= '\0' && argv[i][j] <= '9')
+{
+continue;
+}
+else
 {
 printf("Error\n");
 return (1);
 }
 }
-add += atoi(argv[i]);
+result += atoi(argv[i]);
 }
-printf("%d\n", add);
+printf("%d\n", result);
+}
+else
+printf("\n");
 return (0);
 }
