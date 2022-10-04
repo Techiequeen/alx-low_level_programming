@@ -21,7 +21,7 @@ for (c = i = 0; i < ac; i++)
 if (av[i] == NULL)
 return (NULL);
 
-for (j - 0; av[i][j] != '\0'; j++)
+for (j = 0; av[i][j] != '\0'; j++)
 c++;
 c++;
 }
